@@ -71,10 +71,22 @@ body{
   transform: scale(0.98);
 }
 
+.text {
+  font-size: 1.6rem;
+}
+
+.text a:hover{
+  color: var(--color4);
+}
+
+label {
+  font-size: 1.6rem;
+}
+
 .form-control {
   position: relative;
   margin: 2rem auto 4rem auto;
-  width: 30rem;
+  width: 40rem;
 }
 
 .form-control input {
