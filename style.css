@@ -42,7 +42,7 @@ body{
 .container h1 {
   text-align: center;
   margin-bottom: 3rem;
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 
 .container a {
@@ -71,16 +71,16 @@ body{
   transform: scale(0.98);
 }
 
+.btn:hover {
+  background-color: var(--color4);
+}
+
 .text {
   font-size: 1.6rem;
 }
 
 .text a:hover{
   color: var(--color4);
-}
-
-label {
-  font-size: 1.6rem;
 }
 
 .form-control {
@@ -101,6 +101,27 @@ label {
 }
 
 .form-control input:focus, 
-.form-control input:invalid {
+.form-control input:valid {
   outline: 0;
+  border-bottom-color: var(--color1) ;
+}
+
+.form-control label {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 1.8rem;
+  min-width: .5rem;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span, 
+.form-control input:focus + label span {
+  color: var(--color1);
+  transform: translateY(-2.5rem);
 }
